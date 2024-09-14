@@ -118,7 +118,7 @@ a {
 
 .slider__control-wrapper-1:hover .slider__control-1,
 .slider__control-wrapper-2:hover .slider__control-2,
-.slider__control-wrapper-3:hover .slider__control-wrapper-3:hover,
+.slider__control-wrapper-3:hover .slider__control-3,
 .slider__control-wrapper-4:hover .slider__control-4 {
   background-color: #4a56a4;
 }
