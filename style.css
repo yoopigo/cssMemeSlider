@@ -126,6 +126,7 @@ a {
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .slider__control-wrapper-1:hover .slider__control-circle-1,
