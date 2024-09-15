@@ -57,7 +57,7 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  border: solid;
   overflow: hidden;
 }
 
@@ -71,7 +71,7 @@ a {
 
 .slider__display {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.75s ease;
   width: 400%;
 }
 
@@ -81,6 +81,7 @@ a {
   flex: 0 0 100%;
   position: relative;
   margin-bottom: 0.2%;
+  background-color: black;
 }
 
 .slider__img {
@@ -104,14 +105,11 @@ a {
   padding-bottom: 0.5%;
 }
 
-.slider__control-wrapper {
-}
-
 .slider__control {
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 50%;
-  border: 1px solid #0e1437;
+  border: solid #293aa4;
   transition: all 0.5s ease-out;
   cursor: pointer;
 }
@@ -120,7 +118,7 @@ a {
 .slider__control-wrapper-2:hover .slider__control-2,
 .slider__control-wrapper-3:hover .slider__control-3,
 .slider__control-wrapper-4:hover .slider__control-4 {
-  background-color: #4a56a4;
+  background-color: #8a98f5;
 }
 
 input[type='radio'] {
@@ -141,4 +139,11 @@ input[type='radio'] {
 
 #mem4:checked ~ .slider__display {
   transform: translateX(-337%);
+}
+
+#mem1:checked ~ .slider__controls .slider__control-1,
+#mem2:checked ~ .slider__controls .slider__control-2,
+#mem3:checked ~ .slider__controls .slider__control-3,
+#mem4:checked ~ .slider__controls .slider__control-4 {
+  background-color: #293aa4;
 }
