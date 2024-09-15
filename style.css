@@ -75,6 +75,7 @@ a {
   cursor: pointer;
   gap: 1rem;
   align-items: center;
+  cursor: pointer;
 }
 
 .slider__display {
@@ -127,6 +128,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .slider__control-wrapper-1:hover .slider__control-circle-1,
