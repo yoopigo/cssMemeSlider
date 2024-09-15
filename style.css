@@ -52,11 +52,13 @@ a {
 }
 
 .slider__wrapper {
+  width: 50%;
+  height: 100%;
   position: relative;
-  width: 100%;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
   overflow: hidden;
-  border: 2px solid #ccc;
 }
 
 .slider__control-wrapper {
@@ -78,6 +80,7 @@ a {
   height: 50vh;
   flex: 0 0 100%;
   position: relative;
+  margin-bottom: 0.2%;
 }
 
 .slider__img {
@@ -87,20 +90,21 @@ a {
 }
 
 .slider__text {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.1rem;
+  color: #333;
 }
 
 .slider__controls {
   display: flex;
-  gap: 0%;
-  height: 50%;
-  width: 45vw;
-  justify-content: flex-end;
+  gap: 5%;
+  align-self: flex-end;
+  transform: translateX(-20%);
+  padding-bottom: 0.5%;
 }
 
 .slider__control-wrapper {
-  padding-left: 1%;
-  padding-right: 1%;
 }
 
 .slider__control {
