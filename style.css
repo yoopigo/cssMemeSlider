@@ -1,0 +1,178 @@
+/* Global style */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+  margin: 0;
+}
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Slider style */
+
+.body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding-top: 2%;
+}
+
+.slider__wrapper {
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .slider__wrapper {
+    width: 100vw;
+  }
+}
+
+.slider__control-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 2rem;
+  height: 3rem;
+  cursor: pointer;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slider__display {
+  display: flex;
+  transition: transform 0.75s ease;
+  width: 400%;
+}
+
+.slider__img-wrapper {
+  width: 100vw;
+  height: 50vh;
+  flex: 0 0 100%;
+
+  margin-bottom: 0.2%;
+  background-color: black;
+}
+
+.slider__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slider__text {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: #333;
+}
+
+.slider__controls {
+  display: flex;
+  align-self: flex-end;
+  transform: translateX(-0%);
+}
+
+.slider__control-circle {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  border: solid #293aa4;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+  display: block;
+}
+
+.slider__control {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slider__control-wrapper-1:hover .slider__control-circle-1,
+.slider__control-wrapper-2:hover .slider__control-circle-2,
+.slider__control-wrapper-3:hover .slider__control-circle-3,
+.slider__control-wrapper-4:hover .slider__control-circle-4 {
+  background-color: #8a98f5;
+}
+
+.slider__control-wrapper-1:active .slider__control-circle-1,
+.slider__control-wrapper-2:active .slider__control-circle-2,
+.slider__control-wrapper-3:active .slider__control-circle-3,
+.slider__control-wrapper-4:active .slider__control-circle-4 {
+  background-color: #a2aef7;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+#mem1:checked ~ .slider__display {
+  transform: translateX(-37%);
+}
+
+#mem2:checked ~ .slider__display {
+  transform: translateX(-137%);
+}
+
+#mem3:checked ~ .slider__display {
+  transform: translateX(-237%);
+}
+
+#mem4:checked ~ .slider__display {
+  transform: translateX(-337%);
+}
+
+#mem1:checked ~ .slider__controls .slider__control-circle-1,
+#mem2:checked ~ .slider__controls .slider__control-circle-2,
+#mem3:checked ~ .slider__controls .slider__control-circle-3,
+#mem4:checked ~ .slider__controls .slider__control-circle-4 {
+  background-color: #293aa4;
+}
+
+#mem1:checked:active ~ .slider__controls .slider__control-circle-1,
+#mem2:checked:active ~ .slider__controls .slider__control-circle-2,
+#mem3:checked:active ~ .slider__controls .slider__control-circle-3,
+#mem4:checked:active ~ .slider__controls .slider__control-circle-4 {
+  background-color: #a2aef7;
+}
